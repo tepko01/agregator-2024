@@ -1,0 +1,15 @@
+mixin advantage(img, title, text, alt='')
+	.advantages__item
+		.advantages__top
+			img.advantages__img(src="images/general/advantages/"+img+".svg", alt=alt)
+			p.advantages__ttl=title
+		p.advantages__text=text
+
+section.section.section-advantages
+	.container 
+		.advantages 
+			h2.h2.section-title.advantages__title Наши преимущества
+			.advantages__flex
+				+advantage('video', 'Большой выбор онлайн-курсов', 'Мы аккумулируем большое количество онлайн-курсов по различным направлениям, позволяя сравнивать их, и выбирать то, что вам нравится',)
+				+advantage('search', 'Актуальная информация', 'Мы регулярно обновляем наши базы данных,  чтобы предоставлять вам только самую свежую информацию о новых курсах, старте обучения,  скидках и предложениях от онлайн-школ')
+				+advantage('speed', 'Скорость поиска', 'Агрегатор курсов создан для экономии вашего времени.  Вы можете с легкостью найти подходящий курс в нашем каталоге по различным фильтрам')

@@ -1,0 +1,37 @@
+mixin footerNavCategory(title, items)
+	.footer-category__col 
+		p.footer-category__title=title 
+		ul.footer-category__list
+			each item in items
+				li.footer-category__item 
+					a.footer-category__link(href="#")=item 
+
+footer.footer
+	.footer__top
+		.container 
+			.footer-category
+				+footerNavCategory('Категории', ['Программирование', 'Маркетинг', 'Дизайн', 'Управление', 'Контент-маркетинг'])
+				+footerNavCategory('Школы', ['Skillbox', 'Geekbrains', 'Нетолония', 'Skillfactory', 'Convertmonster'])
+				+footerNavCategory('Отзывы о школах', ['Отзывы о Skillbox', 'Отзывы о Geekbrains', 'Отзывы о Нетолонии', 'Отзывы о Skillfactory', 'Отзывы о Convertmonster'])
+				+footerNavCategory('Курсы', ['С дипломом', 'С трудоустройством', 'Платные', 'Бесплатные', 'Ближайшие по дате старта'])
+				+footerNavCategory('Уровень сложности', ['Начальный', 'Средний', 'Професиональный', 'Для детей'])
+	.footer__bottom.footer-bottom
+		.container 
+			.footer-bottom__flex
+				a.footer-bottom__logo(href="/") Logo
+				p.footer-bottom__copy © 2024. Logo. Все права защищены
+				ul.footer-bottom__social.footer-social
+					li.footer-social__item 
+						a.footer-social__link(href="#")
+							+icon('telegram')
+					li.footer-social__item 
+						a.footer-social__link(href="#")
+							+icon('instagram')
+					li.footer-social__item 
+						a.footer-social__link(href="#")
+							+icon('youtube')
+					li.footer-social__item 
+						a.footer-social__link(href="#")
+							+icon('facebook')
+				.footer-bottom__politic 
+					a(href="#") Пользовательское соглашение

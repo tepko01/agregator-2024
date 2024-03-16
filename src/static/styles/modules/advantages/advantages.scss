@@ -1,0 +1,31 @@
+.advantages {
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		margin: 70px -35px 0;
+	}
+	&__item {
+		padding: 0 35px;
+	}
+	&__top {
+		position: relative;
+		padding-left: 90px;
+		margin-bottom: 25px;
+	}
+	&__img {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	&__ttl {
+		width: 100%;
+		max-width: 170px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	&__text {
+		color: #7E7E7E;
+		line-height: 24px;
+	}
+}
