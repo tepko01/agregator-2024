@@ -1,0 +1,72 @@
+mixin courseNavContent(name, link='#')
+	li.course-nav-drop__item 
+		a.course-nav-drop__link(href=link)=name
+		+icon('arrow-nav')
+
+.section.section-course-directions.bg-gray
+	.container 
+		.course-directions
+			h2.h2.course-directions__title Направления курсов
+			nav.course-directions__nav.course-nav
+				ul.course-nav__main.course-nav-main
+					li.course-nav-main__item.active 
+						a.course-nav-main__link(href="#") Программирование
+						ul.course-nav-main__drop.course-nav-drop
+							+courseNavContent('Все курсы по программированию')
+							+courseNavContent('Python-разработка')
+							+courseNavContent('Web-разработка')
+							+courseNavContent('Мобильная разработка')
+							+courseNavContent('JavaScript-разработка')
+							+courseNavContent('Java-разработка')
+							+courseNavContent('Разработка игр')
+							+courseNavContent('Создание сайтов')
+							+courseNavContent('Системное администрирование')
+							+courseNavContent('QA-тестирование')
+							+courseNavContent('Android-разработка')
+							+courseNavContent('Управление разработкой и IT')
+							+courseNavContent('Frontend-разработка')
+							+courseNavContent('Разработка игр на Unity')
+							+courseNavContent('Разработка на C#')
+							+courseNavContent('PHP-разработка')
+							+courseNavContent('DevOps')
+							+courseNavContent('IOS-разработка')
+							+courseNavContent('Верстка на HTML/CSS')
+							+courseNavContent('Разработка на C++')
+							+courseNavContent('Разработка игр на Unreal Engine')
+							+courseNavContent('Разработка на Kotlin')
+							+courseNavContent('Информационная безопасность')
+							+courseNavContent('Golang-разработка')
+							+courseNavContent('Разработка на Swift')
+							+courseNavContent('1C-разработка')
+							+courseNavContent('VR/AR разработка')
+							+courseNavContent('Фреймворк Laravel')
+					li.course-nav-main__item 
+						a.course-nav-main__link(href="#") Маркетинг
+					li.course-nav-main__item 
+						a.course-nav-main__link(href="#") Дизайн
+					li.course-nav-main__item 
+						a.course-nav-main__link(href="#") Аналитика
+					li.course-nav-main__item 
+						a.course-nav-main__link(href="#") Финансы
+					li.course-nav-main__item 
+						a.course-nav-main__link(href="#") Управление				
+					li.course-nav-main__item 
+						a.course-nav-main__link(href="#") Контент маркетинг
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

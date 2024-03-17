@@ -1,0 +1,57 @@
+.course-directions {
+	padding-bottom: 60px;
+}
+.course-nav-main {
+	position: relative;
+	width: 100%;
+	max-width: 245px;
+	&__item {
+		&.active {
+			background-color: #fff;
+			.course-nav-main__link {
+				font-weight: bold;
+			}
+			.course-nav-main__drop {
+				display: block;
+			}
+		}
+	}
+	&__link {
+		display: block;
+		padding: 18px 30px;
+	}
+	&__drop {
+		width: 1010px;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		display: none;
+	}
+}
+.course-nav-drop {
+	padding: 10px 0;
+	columns: 3;
+	background-color: #fff;
+	&__item {
+		position: relative;
+		.svg-icon {
+			position: absolute;
+			right: 15px;
+			top: calc(50% + 2px);
+			transform: translateY(-50%);
+			width: 5px;
+			height: 8px;
+			fill: #C4C4C4;
+			transition: .3s;
+		}
+		&:hover {
+			.svg-icon {
+				fill: $activeColor;
+			}
+		}
+	}
+	&__link {
+		display: block;
+  	padding: 10px 30px;
+	}
+}
