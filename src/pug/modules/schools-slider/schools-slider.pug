@@ -1,0 +1,19 @@
+mixin school-slider(link, img, alt="")
+	.schools-slider__item
+		a.schools-slider__link(href=link) 
+			img.schools-slider__img(src="images/content/schools-slider/"+img+".png", alt=alt)
+
+section.section.section-schools-slider
+	.container 
+		h2.h2.schools-slider__title Школы
+		.schools-slider__wrap 
+			.schools-slider__nav.schools-slider__nav--prev 
+				+icon('arrow-nav')
+			.schools-slider__nav.schools-slider__nav--next 
+				+icon('arrow-nav')
+			.schools-slider__js.schools-slider-js 
+				+school-slider('#', 'img-1')
+				+school-slider('#', 'img-2')
+				+school-slider('#', 'img-3')
+				+school-slider('#', 'img-4')
+				+school-slider('#', 'img-1')
