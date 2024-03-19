@@ -5,6 +5,7 @@ $(document).ready(function () {
 			infinite: true,
 			dots: true,
 			slidesToShow: 4,
+			slidesToScroll: 4,
 			prevArrow: '.schools-slider__nav--prev',
 			nextArrow: '.schools-slider__nav--next'
 		});
