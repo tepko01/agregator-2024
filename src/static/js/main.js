@@ -7,6 +7,11 @@ $(document).ready(function () {
 			slidesToShow: 4,
 			slidesToScroll: 4,
 			prevArrow: '.schools-slider__nav--prev',
-			nextArrow: '.schools-slider__nav--next'
+			nextArrow: '.schools-slider__nav--next',
+			// appendDots: '.schools-slider__dots',
+			dotsClass: 'schools-slider__dots',
+			customPaging : function(slider, i) {
+				return '';
+			},
 		});
 });

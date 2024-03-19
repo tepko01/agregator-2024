@@ -62,4 +62,23 @@
 		width: 100%;
 		object-fit: none;
 	}
+	&__dots {
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+		li {
+			width: 6px;
+			height: 6px;
+			margin: 0 10px;
+			border-radius: 50%;
+			background-color: #D7D7D7;
+			cursor: pointer;
+			&.slick-active {
+				background-color: $activeColor;
+			}
+			&:hover {
+				background-color: $activeColor;
+			}
+		}
+	}
 }
