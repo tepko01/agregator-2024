@@ -5,6 +5,10 @@ mixin footerNavCategory(title, items)
 			each item in items
 				li.footer-category__item 
 					a.footer-category__link(href="#")=item 
+mixin socialIcon(icon, link)
+	li.footer-social__item 
+		a.footer-social__link(href=link)
+			+icon(icon)
 
 footer.footer
 	.footer__top
@@ -21,17 +25,9 @@ footer.footer
 				a.footer-bottom__logo(href="/") Logo
 				p.footer-bottom__copy © 2024. Logo. Все права защищены
 				ul.footer-bottom__social.footer-social
-					li.footer-social__item 
-						a.footer-social__link(href="#")
-							+icon('telegram')
-					li.footer-social__item 
-						a.footer-social__link(href="#")
-							+icon('instagram')
-					li.footer-social__item 
-						a.footer-social__link(href="#")
-							+icon('youtube')
-					li.footer-social__item 
-						a.footer-social__link(href="#")
-							+icon('facebook')
+					+socialIcon('telegram', '#')
+					+socialIcon('instagram', '#')
+					+socialIcon('youtube', '#')
+					+socialIcon('facebook', '#')
 				.footer-bottom__politic 
 					a(href="#") Пользовательское соглашение
