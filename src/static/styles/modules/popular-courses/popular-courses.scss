@@ -1,0 +1,156 @@
+.pop-cour-filter {
+	margin-bottom: 35px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow-y: auto;
+	}
+	&__item {
+		flex: 1 0 auto;
+	}
+	&__link {
+		display: block;
+		text-align: center;
+		padding: 15px 20px;
+		font-size: 14px;
+		font-weight: bold;
+		border-radius: 50px;
+		transition: background-color .3s;
+		&.active, &:hover {
+			color: #fff;
+			background-color: $activeColor
+		}
+	}
+}
+.popular-courses {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 10px;
+		padding: 15px 35px;
+		border: 1px solid #F0F0F0;
+		border-radius: 5px;
+		box-shadow: 0 9px 15px 0 rgba(226, 226, 226, 0.25);
+	}
+	&__name {
+		a {
+			font-size: 16px;
+			font-weight: bold;
+		}
+	}
+	&__time p {
+		position: relative;
+		padding-left: 32px;
+		font-weight: 12;
+		font-weight: bold;
+		.svg-icon {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 17px;
+			height: 17px;
+		}
+	}
+	&__bottom {
+		margin-top: 25px;
+		text-align: center;
+	}
+	&__btn {
+		padding: 15px 35px;
+	}
+}
+.reviews-popular-course {
+	&__name {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	&__rating {
+		position: relative;
+		padding-left: 22px;
+		font-size: 18px;
+		font-weight: bold;
+		.svg-icon {
+			fill: #FFB800;
+			width: 14px;
+			height: 14px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	&__link {
+		font-size: 12px;
+		color: #B5B5B5;
+	}
+}
+.prices-popular-course {
+	&__old {
+		margin-bottom: 8px;
+		font-size: 12px;
+		color: #B5B5B5;
+		text-decoration: line-through;
+		font-weight: 600;
+	}
+	&__current {
+		margin-bottom: 15px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	&__month {
+		font-size: 12px;
+		color: #00C213;
+		font-weight: 600;
+	}
+}
+.short-course-info {
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+	&__item {
+		position: relative;
+		padding-left: 30px;
+		font-size: 12px;
+		font-weight: bold;
+		margin-bottom: 12px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		.svg-icon {
+			width: 12px;
+			height: 12px;
+		}
+	}
+}
+.actions-popular-course {
+	display: flex;
+	flex-direction: column;
+	&__btn {
+		font-size: 12px;
+		margin-bottom: 8px;
+	}
+	&__compare {
+		display: block;
+		margin-top: 5px;
+		text-align: center;
+		font-size: 10px;
+		color: #8C8C8C;
+		.svg-icon {
+			width: 12px;
+			height: 12px;
+			fill: #8C8C8C;
+			margin-right: 9px;
+		}
+	}
+}

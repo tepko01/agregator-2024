@@ -1,0 +1,68 @@
+mixin popularCourseFilter(name, link)
+	li.pop-cour-filter__item 
+		a.pop-cour-filter__link(href=link)&attributes(attributes)=name
+
+mixin popularCoursesItem(name)
+	.popular-courses__item 
+		.popular-courses__name 
+			a(href="#")=name 
+		.popular-courses__reviews.reviews-popular-course
+			a.reviews-popular-course__name(href="#") Skillbox
+			.reviews-popular-course__rating 
+				+icon('star')
+				span 4.5
+			a.reviews-popular-course__link(href="#") Отзывы о школе 58
+		.popular-courses__prices.prices-popular-course
+			.prices-popular-course__old 85 000 руб
+			.prices-popular-course__current 66 800 руб
+			.prices-popular-course__month от 4 745 руб./месяц
+		.popular-courses__time 
+			p В любое время
+				+icon('clock')
+		.popular-courses__info.short-course-info
+			ul.short-course-info__list 
+				li.short-course-info__item 
+					.short-course-info__icon 
+						+icon('calendar')
+					| 3 месяца
+				li.short-course-info__item 
+					.short-course-info__icon 
+						+icon('level')
+					| Начальный
+				li.short-course-info__item 
+					.short-course-info__icon 
+						+icon('case')
+					| Стажировка
+				li.short-course-info__item 
+					.short-course-info__icon 
+						+icon('diplom')
+					| Диплом
+		.popular-courses__actions.actions-popular-course 
+			a.btn.btn-primary.actions-popular-course__btn.actions-popular-course__primary(href="#") На сайт курса
+			a.btn.btn-border.actions-popular-course__btn.actions-popular-course__border(href="#") Подробнее
+			a.actions-popular-course__compare(href="#") 
+				+icon('shuffle')
+				| Добавить к сравнению
+				
+.section.section-popular-courses
+	.container 
+		.popular-courses
+			h2.h2.popular-courses__title Популярные онлайн-курсы
+			.popular-courses__filter.pop-cour-filter
+				ul.pop-cour-filter__list 
+					+popularCourseFilter('Программирование', '#')
+					+popularCourseFilter('Маркетинг', '#')
+					+popularCourseFilter('Дизайн', '#')(class="active")
+					+popularCourseFilter('Аналитика', '#')
+					+popularCourseFilter('Финансы', '#')
+					+popularCourseFilter('Управление', '#')
+					+popularCourseFilter('Контент-маркетинг ', '#')
+					+popularCourseFilter('Иностранные языки', '#')
+			.popular-courses__main 
+				.popular-courses__list 
+					+popularCoursesItem('Профессия веб-разработчик')
+					+popularCoursesItem('Профессия веб-разработчик')
+					+popularCoursesItem('Профессия веб-разработчик')
+					+popularCoursesItem('Профессия веб-разработчик')
+			.popular-courses__bottom 
+				a.btn.btn-bright.popular-courses__btn(href="#") Посмотреть еще
